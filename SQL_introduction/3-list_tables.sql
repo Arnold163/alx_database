@@ -1,4 +1,4 @@
 -- list tables
 USE mysql;
-SHOW tables;
+SHOW TABLES LIKE holteron_%;
 
