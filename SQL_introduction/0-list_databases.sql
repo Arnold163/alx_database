@@ -1,7 +1,3 @@
---Database
---information_schema
---mysql
---performance_schema
---sys
+--first mysql commands 
 SHOW DATABASES;
 
