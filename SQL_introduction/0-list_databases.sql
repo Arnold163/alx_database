@@ -1,3 +1,3 @@
---first mysql commands 
+/*irst mysql commands */
 SHOW DATABASES;
 
