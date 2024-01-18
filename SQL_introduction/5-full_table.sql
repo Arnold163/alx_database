@@ -2,18 +2,11 @@
 SHOW DATABASES;
 USE hbtn_0c_0;
 CREATE TABLE IF NOT EXISTS first_table(
-    id INT PRIMARY KEY,
-    name VARCHAR(256)
-);
-SELECT
-    COLUMN_NAME AS 'Column',
-    COLUMN_TYPE AS 'Type',
-    IS_NULLABLE AS 'Nullable',
-    COLUMN_KEY AS 'Key',
-    COLUMN_DEFAULT AS 'Default',
-    EXTRA AS 'Extra'
-FROM
-    INFORMATION_SCHEMA.COLUMNS
-WHERE
-    TABLE_NAME = 'first_table';
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(128) DEFAULT NULL,
+    c CHAR(1) DEFAULT NULL,
+    created_at DATE DEFAULT NULL,
+    PRIMARY KEY (id)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
