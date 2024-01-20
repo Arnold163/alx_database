@@ -1,5 +1,8 @@
 -- list tables
+SHOW DATABASES;
 USE mysql;
 SHOW TABLES;
-SHOW TABLES FROM mysql;
+
+
+
 
