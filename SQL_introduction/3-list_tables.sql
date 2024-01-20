@@ -1,6 +1,6 @@
 -- list tables
 USE hbtn_test_db_0;
-SHOW TABLES LIKE 'holbteron_%';
+SHOW TABLES LIKE;
 
 
 
