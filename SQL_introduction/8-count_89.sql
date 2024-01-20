@@ -1,4 +1,6 @@
 -- mysql count
-SELECT COUNT(*) AS record_count
-FROM hbtn_0c_0.first_table
+SHOW DATABASES;
+USE hbtn_0c_0;
+SELECT COUNT(*) AS record_count 
 WHERE id = 89;
+
