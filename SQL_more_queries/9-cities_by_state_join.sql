@@ -16,14 +16,6 @@ INSERT INTO states (name) VALUES
     ('Arizona'),
     ('Nevada');
 
-INSERT INTO cities (state_id, name) VALUES
-    ((SELECT id FROM states WHERE name = 'California'), 'San Francisco'),
-    ((SELECT id FROM states WHERE name = 'California'), 'San Diego'),
-    ((SELECT id FROM states WHERE name = 'California'), 'San Jose'),
-    ((SELECT id FROM states WHERE name = 'Arizona'), 'Page'),
-    ((SELECT id FROM states WHERE name = 'Arizona'), 'Phoenix'),
-    ((SELECT id FROM states WHERE name = 'Nevada'), 'Las Vegas');
-
 SELECT cities.id, cities.name, states.name
 FROM cities
 JOIN states ON cities.state_id = states.id
