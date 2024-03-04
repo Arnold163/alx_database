@@ -1,5 +1,12 @@
 -- full description
 USE hbtn_0c_0;
+CREATE TABLE `first_table` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(128) DEFAULT NULL,
+    `c` CHAR(1) DEFAULT NULL,
+    `created_at` DATE DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 SELECT 
   COLUMN_NAME AS Field,
   COLUMN_TYPE AS Type,
@@ -9,6 +16,8 @@ SELECT
   EXTRA AS Extra
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'hbtn_0c_0' AND TABLE_NAME = 'first_table';
+
+
 
 
 
