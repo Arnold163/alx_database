@@ -25,7 +25,7 @@ INSERT INTO cities (state_id, name) VALUES
     (3, 'Las Vegas');
 
 
-SELECT cities.id, cities.name, states.name
+SELECT cities.name, states.name
 FROM cities
 JOIN states ON cities.state_id = states.id
 ORDER BY cities.id ASC;
