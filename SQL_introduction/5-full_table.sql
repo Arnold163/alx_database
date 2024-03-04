@@ -1,3 +1,4 @@
+-- full description
 USE hbtn_0c_0;
 first_tableCREATETABLE`first_table`(
 `id`intNOTNULLAUTO_INCREMENT,
