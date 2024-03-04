@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS cities (
 INSERT INTO states (name) VALUES
     ('California'),
     ('Arizona'),
-    ('Nevada');
+    ('Texas');
 
 SELECT cities.id, cities.name, states.name
 FROM cities
